@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Welcome: user email"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Products with Discount"
+        android:textColor="#0000FF"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">>
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:src="@drawable/img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="75dp"
+                android:layout_marginLeft="10dp"
+                android:text="iPhone7"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="78dp"
+                android:layout_marginLeft="10dp"
+                android:text="1000 $"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtDesc"/>
+
+
+            <TextView
+                android:id="@+id/txtDisc"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="5 %"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtPrice"/>
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/txtDisc"
+                android:id="@+id/chkbox"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_below="@id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">>
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:src="@drawable/img1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/txtDesc1"
+                android:layout_width="75dp"
+                android:layout_marginLeft="10dp"
+                android:text="S8 Plus"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img1"/>
+
+            <TextView
+                android:id="@+id/txtPrice1"
+                android:layout_width="78dp"
+                android:layout_marginLeft="10dp"
+                android:text="900 $"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtDesc1"/>
+
+
+            <TextView
+                android:id="@+id/txtDisc1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="5 %"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtPrice1"/>
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/txtDisc1"
+                android:id="@+id/chkbox1"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_below="@id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img2"
+                android:src="@drawable/img2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/txtDesc2"
+                android:layout_width="75dp"
+                android:layout_marginLeft="10dp"
+                android:text="LG G6"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img2"/>
+
+            <TextView
+                android:id="@+id/txtPrice2"
+                android:layout_width="78dp"
+                android:layout_marginLeft="10dp"
+                android:text="900 $"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtDesc2"/>
+
+
+            <TextView
+                android:id="@+id/txtDisc2"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="5 %"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtPrice2"/>
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/txtDisc2"
+                android:id="@+id/chkbox2"/>
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/amountr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:textColor="#fff"
+            android:background="#3FB63C"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/rl3"/>
+
+
+        <Button
+            android:id="@+id/cartr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View cart"
+            android:textColor="#fff"
+            android:background="#395DD6"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/amountr"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

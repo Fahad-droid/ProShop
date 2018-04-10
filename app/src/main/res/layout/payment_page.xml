@@ -1,0 +1,131 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent" tools:context = ".MainActivity"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Payment Page"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="#0000FF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_marginTop="23dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+
+        <ImageView android:src="@drawable/paylogo1"
+            android:id="@+id/paylogo"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name on Card"
+            android:textColorHint = "#ffff25e6"
+            android:inputType="textAutoComplete" />
+
+        <EditText android:id="@+id/ccadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:textColorHint = "#ffff25e6"
+            android:hint="Shipping Address" />
+
+        <EditText android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColorHint = "#ffff25e6"
+            android:hint="Email Address" />
+
+        <!--<EditText android:id="@+id/phonenum"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="number"-->
+            <!--android:textColorHint = "#ffff25e6"-->
+            <!--android:hint="Phone Number" />-->
+
+        <EditText android:id="@+id/cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColorHint = "#ffff25e6"
+            android:hint="Card Number" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/expmonth"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Expiry Month"
+                android:layout_weight="1"
+                android:inputType="date"
+                android:textColorHint = "#ffff25e6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/expyear"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Expiry Year"
+                android:inputType="date"
+                android:textColorHint = "#ffff25e6"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <EditText android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:textColorHint = "#ffff25e6"
+            android:hint="CVV Code"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnpayment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Confirm"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnconfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:layout_weight="1"
+                android:text="Send SMS/Email"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

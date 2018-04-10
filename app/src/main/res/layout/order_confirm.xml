@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:src="@drawable/ty"
+        android:layout_centerHorizontal="True"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#29976b"
+        android:gravity="center"
+        android:text="Your order is confirmed. \nAnd will be delivered within 40 mins !!" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="Any Questions ?. \nCall us at 1800-Shoppro-#\n(# is your store number.)" />
+
+</LinearLayout>
